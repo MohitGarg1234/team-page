@@ -1,38 +1,105 @@
 .App {
   text-align: center;
+  /* background-color: blanchedalmond;  */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* *{
+  background-color: blanchedalmond;
+} */
+.navbar-brand img{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-left: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item{
+  margin-left: 60px;
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item button{
+  /* background-color: #61dafb; */
+  border-radius: 50px;
+  font-size: x-small;
+  margin-top: 5px;
+  color: white;
+  font-size: 0.7rem;
+  background-image: linear-gradient(to right, rgb(67, 25, 193) , rgba(165, 51, 152, 0.708));;
+}
+.collapse ul li .underline{
+  height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+} 
+.collapse ul li.active-link .underline{
+  width: 100%;
+	background-color: white;
+}
+.image{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+/* .body{
+  display: flex;
+} */
+.body{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.imageMentor{
+  height: 150px;
+  width: 150px;
+  border: 2px; 
+  border-radius: 25% 45% 5% 45%;
+}
+.universities:hover {
+  transform: translateY(-10px) scale(1.1);
+  cursor: pointer;
+}
+.institutes{
+  background: -webkit-linear-gradient(#0d82f0, #07aba8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mentors{
+  background: -webkit-linear-gradient(#0d82f0, #07aba8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_footer{
+  background-image: url("https://img.freepik.com/premium-vector/abstract-background-with-stars-as-template-design-element-starry-night_370567-1246.jpg?w=740");
+}
+li{
+  margin: auto;
+}  
+  
+.sciastra{
+  margin-left: 50px;
+  display: flex;
+}
+.footer_links_2{
+  text-decoration: none;
+  margin-left: 50px;
+  display: flex;
+}
+.text-light{
+  text-decoration: none;
+}
+.text-lg-start{
+  text-decoration: none;
+}
+.main__footer__logo{
+  margin-left: 50px;
+  display: flex;
+}
+.Pages{
+  margin-left: 50px;
+  display: flex;
+}
+.list-unstyled{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
